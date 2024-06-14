@@ -17,7 +17,7 @@ class CommandTests(SimpleTestCase):
 
     def test_wait_for_db_ready(self, wait_for_db_check):
         """Test waiting for database if database is ready."""
-        # We just the mock the function to return True
+        # just to mock the function to return True
         wait_for_db_check.return_value = True
 
         call_command('wait_for_db')
